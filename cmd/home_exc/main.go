@@ -35,7 +35,7 @@ func handleRequest(w http.ResponseWriter, req *http.Request) {
 	response := messages.LocationMessage{Location: result}
 	msg, err := response.MarshalJSON()
 	if err != nil {
-		fmt.Println("Oi Vei!")
+		_, _ = io.WriteString(w, fmt.Sprintf("Error parsing message: %s", err.Error()))
 		return
 	}
 
