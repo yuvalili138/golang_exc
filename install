@@ -1,0 +1,10 @@
+go get github.com/hashicorp/golang-lru
+go get github.com/mailru/easyjson
+cd $GOPATH/src/github.com/yuvalili138/golang_exc/pkg/db/
+go install
+cd $GOPATH/src/github.com/yuvalili138/golang_exc/pkg/messages/
+go install
+cd $GOPATH/src/github.com/yuvalili138/golang_exc/cmd/home_exc/
+go install
+cd $GOPATH/src/github.com/yuvalili138/golang_exc/cmd/poster/
+go install
